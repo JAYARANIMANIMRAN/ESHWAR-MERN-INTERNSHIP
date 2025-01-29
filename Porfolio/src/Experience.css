@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container Styles */
+  .experience-container {
+    padding: 4rem 0;
+    background: #000;
+    color: #fff;
+    box-shadow: 0 0 15px #00f0ff; /* Apply box-shadow to the main container */
+  }
+  
+  .experience-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00f0ff;
+    text-shadow: 0 0 15px #00f0ff;
+    text-align: center;
+    margin-bottom: 3rem;
+    box-shadow: 0 0 15px #00f0ff; /* Box shadow for the title */
+  }
+  
+  /* Grid and Paper Layout */
+  .experience-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .experience-paper {
+    padding: 2rem;
+    color: #fff;  /* Default text color to white */
+    border: 2px solid #00f0ff;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #00f0ff;  /* Add box-shadow to the paper boxes */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .experience-paper:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Frontend and Backend Specific Box Background */
+  .experience-paper:nth-of-type(1) {
+    background: #000;
+    box-shadow: 0 0 15px #00f0ff;  /* Black background for Frontend Development */
+  }
+  
+  .experience-paper:nth-of-type(2) {
+    background: #000; 
+    box-shadow: 0 0 15px #00f0ff; /* Black background for Backend Development */
+  }
+  
+  /* Change text color and apply text shadow inside both boxes */
+  .experience-paper:nth-of-type(1) .MuiTypography-root,
+  .experience-paper:nth-of-type(2) .MuiTypography-root {
+    color: #fff; /* Text color white */
+    text-shadow: 0 0 15px #00f0ff; 
+    /* Apply text shadow */
+  }
+  
+  /* Skill Item Styles */
+  .skill-item {
+    margin-bottom: 1rem;
+  }
+  
+  .skill-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+  }
+  
+  .skill-level {
+    color: #00f0ff;
+  }
+  
+  /* Typography Styles */
+  .skill-name,
+  .skill-level {
+    font-size: 1.2rem;
+  }
+  
+  .skill-level {
+    font-weight: bold;
+  }
+  
+  .skill-item .skill-content {
+    padding: 0.5rem;
+    border: 1px solid #00f0ff;
+    border-radius: 10px;
+  }
+  
+  .skill-item .skill-content:hover {
+    background: #00f0ff;
+    color: #000;
+  }
+  

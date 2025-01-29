@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+}

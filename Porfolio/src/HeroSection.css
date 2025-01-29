@@ -1,0 +1,98 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: #000; /* Match background */
+  }
+  
+  .text-content {
+    max-width: 50%;
+    text-align: left;
+  }
+  
+  .text-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .text-content h1 span {
+    color: #00f0ff; /* Highlight color */
+  }
+  
+  .text-content h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .text-content h2 span {
+    color: #00f0ff; /* Highlight color */
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #00f0ff; /* Highlight color */
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .hire-btn,
+  .contact-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .hire-btn {
+    background-color: #00f0ff;
+    color: #000;
+  }
+  
+  .contact-btn {
+    background-color: transparent;
+    border: 2px solid #00f0ff;
+    color: #00f0ff;
+  }
+  
+  .hire-btn:hover,
+  .contact-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .image-content {
+    max-width: 60%;
+  }
+  
+  .profile-image {
+    width: 10cm;
+    border-radius: 50%;
+    border: 5px solid #00f0ff; /* Circular glowing effect */
+  }
+  
