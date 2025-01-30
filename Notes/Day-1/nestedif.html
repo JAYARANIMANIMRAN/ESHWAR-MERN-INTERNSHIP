@@ -1,0 +1,27 @@
+<html>
+<body>
+<h1>Access</h1>
+</body>
+<script>
+
+let age = 22;
+let hasVIP = false;
+let membershipStatus = "premium";
+
+if (age >= 18) {
+    console.log("You are eligible for adult pricing.");
+    if (hasVIP) {
+        console.log("Enjoy a free drink with your VIP access!");
+    } else if (membershipStatus === "premium") {
+        console.log("You're a premium member! Get a 20% discount.");
+    } else {
+        console.log("No VIP access, but you can still enjoy the event.");
+    }
+} else {
+    console.log("You're eligible for a youth discount. Bring a parent for free entry!");
+}
+
+
+
+</script>
+</html>

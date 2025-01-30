@@ -1,0 +1,34 @@
+<html>
+<script>
+let reachA=new Promise((resolve,reject)=>  {
+let reached=true
+if(reached)
+setTimeout(resolve,5000,"A reached")
+else
+reject("A not reached")
+})
+
+
+let reachB=new Promise((resolve,reject)=>  {
+let reached=false
+if(reached)
+setTimeout(resolve,2000,"B reached")
+else
+reject("B not reached")
+})
+
+let reachC=new Promise((resolve,reject)=>  {
+let reached=true
+if(reached)
+setTimeout(resolve,8000,"C reached")
+else
+reject("C not reached")
+})
+
+
+Promise.race([reachA,reachB,reachC])
+.then((message)=>console.log(message))
+.catch((message)=>console.log(message))
+
+</script>
+</html>

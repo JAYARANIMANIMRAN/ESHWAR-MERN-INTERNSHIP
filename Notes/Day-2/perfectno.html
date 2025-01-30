@@ -1,0 +1,23 @@
+<html>
+<body>
+<script>
+let size = parseInt(prompt("Enter the size of the array:"));
+let array = [];
+
+for (let i = 0; i < size; i++) {
+  let element = parseInt(prompt(`Enter element ${i + 1}:`));
+  array.push(element);
+}
+function PerfectNo(num) {
+  let sum = 0;
+  for (let i = 1; i <= num / 2; i++) {
+    if (num % i === 0) sum += i;
+  }
+  return sum === num && num > 1;
+}
+function isEvenPrime(num) {
+  return num === 2;
+}
+</script>
+</body>
+</html>

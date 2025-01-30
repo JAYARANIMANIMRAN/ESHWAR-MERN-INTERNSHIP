@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var lemons = prompt("Enter the number of lemons");
+lemons = parseInt(lemons);
+
+if (lemons > 0) {
+    let god1 = 0, god2 = 0, god3 = 0;
+    let shortage = 0, surplus = 0;
+
+    if (lemons >= 7) {
+        god1 = 7;
+        if (lemons >= 14) {
+            god2 = 7;
+            if (lemons >= 21) {
+                god3 = 7;
+                surplus = lemons - 21; 
+            } else {
+                god3 = lemons - 14;
+                shortage = 21 - lemons;
+            }
+        } else {
+            god2 = lemons - 7; 
+            shortage = 21 - lemons; 
+        }
+    } else {
+        god1 = lemons; 
+        shortage = 21 - lemons; 
+    }
+
+    // Corrected template literals and added proper backticks
+    console.log(`God 1: ${god1} ${god1 === 7 ? 'offered' : 'needed'}`);
+    console.log(`God 2: ${god2} ${god2 === 7 ? 'offered' : 'needed'}`);
+    console.log(`God 3: ${god3} ${god3 === 7 ? 'offered' : 'needed'}`);
+    
+    if (shortage > 0) {
+        console.log(`Shortage: ${shortage}`);
+    } else {
+        console.log(`Surplus: ${surplus}`);
+        console.log('"Sufficient"');
+    }
+} else {
+    console.log("Invalid input. Please enter a positive number of lemons.");
+}
+</script>
+</body>
+</html>

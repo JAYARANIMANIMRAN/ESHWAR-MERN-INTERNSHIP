@@ -1,0 +1,36 @@
+<html>
+<body>
+	<h1 id = "Addition"></h1>
+	<h1 id = "Subtraction"></h1>
+        <h1 id = "Product"></h1>
+        <h1 id = "Quotient"></h1>
+        <h1 id = "Reminder"></h1>
+</body>
+<script>
+	var add = (a,b) => {
+        return a+b;
+	};
+        
+        var sub = (a,b) => {
+        return a-b;
+	};
+ 
+        var mul = (a,b) => {
+        return a*b;
+	};
+
+        var div = (a,b) => {
+        return a/b;
+	};
+
+        var rem = (a,b) => {
+        return a%b;
+	};
+
+document.getElementById("Addition").innerHTML = add(100,200);
+document.getElementById("Subtraction").innerHTML = sub(100,200);
+document.getElementById("Product").innerHTML = mul(100,200);
+document.getElementById("Quotient").innerHTML = div(100,200);
+document.getElementById("Reminder").innerHTML = rem(100,200);
+</script>
+</html>

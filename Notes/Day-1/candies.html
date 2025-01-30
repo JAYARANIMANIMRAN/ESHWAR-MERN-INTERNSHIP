@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function calculateCandies(initialCandies) {
+    let samCandies = Math.floor(initialCandies / 2) + Math.floor(Math.floor(initialCandies / 2) / 2); 
+    let angleCandies = Math.floor(initialCandies / 2) - Math.floor(Math.floor(initialCandies / 2) / 2); 
+    return { sam: samCandies, angle: angleCandies };
+}
+
+let initialCandies = 75; 
+let result = calculateCandies(initialCandies);
+
+alert("Sam has " + result.sam + " candies, and Angle has " + result.angle + " candies.");
+
+</script>
+</body>
+</html>
+

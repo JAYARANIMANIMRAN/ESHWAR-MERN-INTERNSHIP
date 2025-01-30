@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Calculator</h1>
+
+    <label for="num1">Enter first number:</label>
+    <input type="number" id="num1" placeholder="e.g., 100">
+
+    <label for="num2">Enter second number:</label>
+    <input type="number" id="num2" placeholder="e.g., 200">
+
+    <button onclick="calculate()">Calculate</button>
+
+    <h1 id="Addition"></h1>
+    <h1 id="Subtraction"></h1>
+    <h1 id="Product"></h1>
+    <h1 id="Division"></h1>
+    <h1 id="Quotient"></h1>
+    <h1 id="Reminder"></h1>
+
+    <script>
+
+        const add = (a, b) => a + b;
+        const sub = (a, b) => a - b;
+        const mul = (a, b) => a * b;
+        const div = (a, b) => b !== 0 ? (a / b).toFixed(2) : "Can't divide by zero";
+        const quo = (a, b) => b !== 0 ? Math.floor(a / b) : "Can't divide by zero";
+        const rem = (a, b) => b !== 0 ? a % b : "Can't divide by zero";
+
+        const calculate = () => {
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Please enter valid numbers!");
+                return;
+            }
+
+            document.getElementById("Addition").innerHTML = `Addition: ${add(num1, num2)}`;
+            document.getElementById("Subtraction").innerHTML = `Subtraction: ${sub(num1, num2)}`;
+            document.getElementById("Product").innerHTML = `Product: ${mul(num1, num2)}`;
+            document.getElementById("Division").innerHTML = `Division: ${div(num1, num2)}`;
+            document.getElementById("Quotient").innerHTML = `Quotient: ${quo(num1, num2)}`;
+            document.getElementById("Reminder").innerHTML = `Remainder: ${rem(num1, num2)}`;
+        };
+    </script>
+</body>
+</html>
